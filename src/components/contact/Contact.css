@@ -1,0 +1,115 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 80px 170px;
+}
+.contact-title{
+    position: relative;
+}
+.contact-title h1{
+    padding: 0px 30px;
+    font-size: 80px;
+    font-weight: 600;
+}
+.contact-title img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+.contact-section{
+    display: flex;
+    gap: 150px;
+}
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  
+}
+.contact-left h1{
+    font-size: 40px;
+    font-weight: 600;
+    background: linear-gradient(45deg, #ff00ff, #00ffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.contact-left p{
+    font-size: 20px;
+    max-width: 550px;
+    color: #666;
+    line-height: 35px;
+
+}
+
+.contact-details{
+    display: flex;
+    flex-direction: column;
+    color: #666;
+    font-size: 20px;
+    
+
+}
+.contact-detail{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.contact-right{
+    display: flex;
+    flex-direction: column;
+    align-items:  start;
+    gap: 30px;
+    
+
+}
+
+.contact-right label{
+    font-size: 20px;
+    color: #D8d8d8;
+    font-weight: 500;
+   
+
+}
+.contact-right input{
+    border: none;
+    width: 650px;
+    height: 78px;
+    padding-left: 20px;
+    border-radius: 4px;
+    background: #32323c;
+    color: #A0A0A0;
+    font-family: outfit;
+    font-size: 20px;
+}
+
+.contact-right textarea{
+    border: none;
+    width: 650px;
+    padding: 25px;
+    border-radius: 4px;
+    background: #32323c;
+    color: #A0A0A0;
+    font-family: ootfit;
+    font-size: 20px;
+}
+.contact-submit{
+    border: none;
+    color: white;
+    border-radius: 50px;
+    background: linear-gradient(264deg,#df8908 -5.09%, #ff00ff 106.28%);
+    padding: 20px 60px;
+    font-size: 22px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-submit:hover{
+    background: linear-gradient(264deg,#df8908 -5.09%, #ff00ff 106.28%);
+    transform: scale(1.05);
+    transition: 0.3s;
+}
