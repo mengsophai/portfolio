@@ -6,7 +6,7 @@ import mywork_data from '../../assets/Mywork_Data'
 
 const Mywork = () => {
   return (
-    <div className='mywork'>
+    <div id='work' className='mywork'>
         <div className="mywork-title">
             <h1>my latest work</h1>
             <img src={theme_pattern} alt="" />

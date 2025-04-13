@@ -1,13 +1,30 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Hero.css';
 import phaixtey from '../../assets/phaixtey.jpg';
 import { motion } from 'framer-motion';
+import Typed from 'typed.js';
+import DownloadButton from '../Download/DownloadButton';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 const Hero = () => {
 
+  useEffect(() => {
+    const options = {
+      strings: ["I'm a Web Developer "],
+      typeSpeed: 100,
+      backSpeed: 100,
+      backDelay: 1000,
+      loop: true,
+    };
+
+    const typed = new Typed(".animation", options);
+    return () => {
+      typed.destroy();
+    };
+  }, []);
+
   return (
-    <div className="hero">
-  
+    <div id='home' className="hero">
       <div className="image-wrapper">
         <motion.img
           src={phaixtey}
@@ -17,29 +34,31 @@ const Hero = () => {
           transition={{ duration: 2, ease: "linear", repeat: Infinity }}
         />
       </div>
+      <DownloadButton/>
 
-
+      <h1><span className='animation'></span></h1>
+      <div  className='phaixtey'>
       
-      <div class="card">code</div>
+      </div>
+ 
 
-
-
-
-
-      <h1>
-      
-        <span>I'm Meng Sophai,</span> web developer based in KH.
-      </h1>
       <p>
         I'm a web developer from Phnom Penh with a passion for creating beautiful and functional websites.
         I love to learn new technologies and improve my skills.
       </p>
 
       <div className="hero-action">
-        <div className="hero-connect">Connect with me</div>
-        <div className="hero-resume">My resume</div>
+        <button className="hero-connect"><AnchorLink className='anchor-link' offset={50} href='#contact'>Connect with me</AnchorLink></button>
+       
+        <button className="hero-resume">My resume</button>
+      
+     
       </div>
+     
+     
+      
     </div>
+    
   );
 };
 

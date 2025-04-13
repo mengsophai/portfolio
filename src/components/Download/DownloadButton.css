@@ -1,0 +1,19 @@
+.download-btn {
+    padding: 12px 24px;
+    background: linear-gradient(267deg, #DF8908 -5.09%, #B415ff 102.28%);
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius:100px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .download-btn:hover {
+    background: linear-gradient(267deg, #B415ff -5.09%, #DF8908 102.28%);
+    transition: all 0.5s ease-in-out;
+    
+  }
+  .download-btn:focus {
+    outline: none;
+  }
+  
