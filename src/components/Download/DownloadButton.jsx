@@ -4,9 +4,10 @@ import "./DownloadButton.css";
 const DownloadButton = () => {
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/cv.pdf"; // Make sure cv.pdf is in your public folder
+    link.href = "/_byMeng sophai  CV.pdf"; // Make sure cv.pdf is in your public folder
     link.download = "My_CV.pdf";
     link.click();
+    
   };
 
   return (
