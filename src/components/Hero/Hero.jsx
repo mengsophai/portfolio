@@ -5,7 +5,6 @@ import { motion } from 'framer-motion';
 import Typed from 'typed.js';
 import DownloadButton from '../Download/DownloadButton';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-
 const Hero = () => {
 
   useEffect(() => {
@@ -16,7 +15,6 @@ const Hero = () => {
       backDelay: 1000,
       loop: true,
     };
-
     const typed = new Typed(".animation", options);
     return () => {
       typed.destroy();
@@ -34,29 +32,18 @@ const Hero = () => {
           transition={{ duration: 2, ease: "linear", repeat: Infinity }}
         />
       </div>
-      <DownloadButton />
-
+      <DownloadButton/>
       <h1><span className='animation'></span></h1>
       <div className='phaixtey'>
-
       </div>
-
-
       <p>
         I'm a web developer from Phnom Penh with a passion for creating beautiful and functional websites.
         I love to learn new technologies and improve my skills.
       </p>
-
       <div className="hero-action">
         <button className="hero-connect"><AnchorLink className='anchor-link' offset={50} href='#contact'>Connect with me</AnchorLink></button>
-
         <button className="hero-resume">My resume</button>
-
-
       </div>
-
-
-
     </div>
 
   );
