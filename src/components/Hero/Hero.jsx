@@ -34,13 +34,13 @@ const Hero = () => {
           transition={{ duration: 2, ease: "linear", repeat: Infinity }}
         />
       </div>
-      <DownloadButton/>
+      <DownloadButton />
 
       <h1><span className='animation'></span></h1>
-      <div  className='phaixtey'>
-      
+      <div className='phaixtey'>
+
       </div>
- 
+
 
       <p>
         I'm a web developer from Phnom Penh with a passion for creating beautiful and functional websites.
@@ -49,16 +49,16 @@ const Hero = () => {
 
       <div className="hero-action">
         <button className="hero-connect"><AnchorLink className='anchor-link' offset={50} href='#contact'>Connect with me</AnchorLink></button>
-       
+
         <button className="hero-resume">My resume</button>
-      
-     
+
+
       </div>
-     
-     
-      
+
+
+
     </div>
-    
+
   );
 };
 
