@@ -119,12 +119,7 @@
 
     
   }
-  .framers{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1000px;
-  }
+
     .framers img{
         width: 300px;
         border-radius: 100%;
