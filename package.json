@@ -5,10 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vercel-build-fix",
     "serve": "vite preview",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "vercel-build-fix": "chmod +x node_modules/.bin/vite && vite build"
   },
   "eslintConfig": {
     "extends": [
